@@ -1,11 +1,18 @@
-import openai
-import typer
-import requests
+import openai   #pip install openai
+import typer    #pip install typer
+import requests #pip install requests
+import os
+import platform
+
+# Dependencias adicionales para procesamiento de imágenes
 from PIL import Image
 from io import BytesIO
 
+# Carga las credenciales de OpenAI
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
 # Configura tu clave API
-openai.api_key = 'tu_clave_api_aqui'
+#openai.api_key = 'tu_clave_api_aqui'
 
 def analyze_image(image_path):
     # Cargar la imagen
