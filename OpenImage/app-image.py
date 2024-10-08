@@ -36,8 +36,10 @@ if amount_found != 0:
         # every recognized sign
         cv2.rectangle(img_rgb, (x, y), 
                       (x + height, y + width), 
-                      (0, 255, 0), 5)
-
+                      (255, 0, 255), 5) #0,255,0 is the color green 255,0,255 is the color purple// 5 is the thickness
+        
+        print(x,y,width,height) #print the coordinates and the width and height
+        print(x,y,x+height,y+width)#print the coordinates and the width and height
 
 
 # Creates the environment 
