@@ -82,8 +82,8 @@ barcelona = fifa.loc[fifa.Club == "FC Barcelona"]['Overall']
 madrid = fifa.loc[fifa.Club == "Real Madrid"]['Overall']
 river = fifa.loc[fifa.Club == "River Plate"]['Overall']
 
-bp = plt.boxplot([barcelona, madrid, river], labels=['a','b','c'], boxprops=dict(facecolor='red'))
-#bp = plt.boxplot([barcelona, madrid, river], labels=['FC Barcelona','Real Madrid','River Plate'], patch_artist=True, medianprops={'linewidth': 2})
+# plt boxplot
+bp = plt.boxplot([barcelona, madrid, river], labels=['FC Barcelona','Real Madrid','River Plate'], patch_artist=True, medianprops={'linewidth': 2})
 
 plt.title('Professional Soccer Team Comparison')
 plt.ylabel('FIFA Overall Rating')
